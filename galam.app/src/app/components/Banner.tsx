@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Jersey_10 } from "next/font/google";
+import Link from "next/link";
 
 const Jersey_10_Font = Jersey_10({
   weight: "400",
@@ -73,9 +74,11 @@ export default function Banner() {
           GAMING AND <br /> PLATFORMS
         </h1>
         <div className="mt-6">
+          <Link href="/game">
           <button className="px-10 py-3 rounded-xl text-white font-light tracking-wider bg-gradient-to-r from-[#2BC0E4]/60 to-[#EAECC6]/40 hover:from-[#2BC0E4]/80 hover:to-[#EAECC6]/60 backdrop-blur-lg transition-all duration-300">
             PLAY NOW
           </button>
+          </Link>
         </div>
       </div>
 
